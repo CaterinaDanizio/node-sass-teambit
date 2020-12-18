@@ -1,31 +1,54 @@
 main {
-  background-color: $back-main;
   text-align: center;
 
-  .container-main {
-    @include flex;
-    justify-content: space-between;
-    @include container;
 
-    .block {
-      width: 25%;
-      padding: 30px;
+  section.pink {
+    background-color: $back-main;
 
+    .container-main {
+      @include flex;
+      justify-content: space-between;
+      @include container;
+
+      .block {
+        width: 25%;
+        padding: 30px;
+
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+    }
+
+    .before {
+      border-bottom: 1px solid black;
       img {
-        height: 150px;
-        width: auto;
+        width: 300px;
+        height: auto;
+        padding: 20px;
       }
     }
   }
 
-  .before {
-    border-bottom: 1px solid black;
-    img {
-      width: 300px;
-      height: auto;
-      padding: 20px;
+  .insight {
+    @include flex;
+
+    .text {
+      text-align: left;
+      img {
+        width: 250px;
+      }
     }
+
+    .text.align-rg {
+      text-align: right;
+    }
+
+
   }
+
+
 
 
 }

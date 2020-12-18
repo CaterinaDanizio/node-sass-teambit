@@ -14,6 +14,10 @@
   height: 100%;
 }
 
+.img img {
+  width: 100%;
+}
+
 header {
   color: black;
 }
@@ -90,34 +94,53 @@ header .jumbotron button img.icon {
 }
 
 main {
-  background-color: #ffe7d2;
   text-align: center;
 }
 
-main .container-main {
+main section.pink {
+  background-color: #ffe7d2;
+}
+
+main section.pink .container-main {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
 
-main .container-main .block {
+main section.pink .container-main .block {
   width: 25%;
   padding: 30px;
 }
 
-main .container-main .block img {
+main section.pink .container-main .block img {
   height: 150px;
   width: auto;
 }
 
-main .before {
+main section.pink .before {
   border-bottom: 1px solid black;
 }
 
-main .before img {
+main section.pink .before img {
   width: 300px;
   height: auto;
   padding: 20px;
+}
+
+main .insight {
+  display: flex;
+}
+
+main .insight .text {
+  text-align: left;
+}
+
+main .insight .text img {
+  width: 250px;
+}
+
+main .insight .text.align-rg {
+  text-align: right;
 }
 
