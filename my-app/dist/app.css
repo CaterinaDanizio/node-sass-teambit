@@ -5,3 +5,87 @@
   font-family: Arial;
 }
 
+.text {
+  width: 50%;
+}
+
+.img {
+  width: 50%;
+  height: 100%;
+}
+
+header {
+  color: black;
+}
+
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+header nav .menu li {
+  display: inline-block;
+  list-style: none;
+}
+
+header nav .menu a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav .menu button {
+  background-color: white;
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+header nav .menu button:hover {
+  background-color: #233569;
+}
+
+header nav .menu button a {
+  color: #30488f;
+}
+
+header nav .menu button a:hover {
+  color: white;
+}
+
+header nav .menu button img.icon {
+  width: 20px;
+}
+
+header .jumbotron {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+header .jumbotron .img img {
+  width: 100%;
+}
+
+header .jumbotron button {
+  background-color: #30488f;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+header .jumbotron button:hover {
+  background-color: #233569;
+}
+
+header .jumbotron button a {
+  color: white;
+  text-decoration: none;
+}
+
+header .jumbotron button img.icon {
+  width: 20px;
+}
+

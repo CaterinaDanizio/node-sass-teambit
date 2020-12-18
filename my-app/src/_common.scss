@@ -4,3 +4,70 @@
   box-sizing: border-box;
   font-family: Arial;
 }
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+// BUTTON HOME
+
+@mixin CTA-home {
+  background-color: white;
+  border: 1px solid $button-back;
+  border-radius: 7px;
+  padding: 5px;
+
+  &:hover {
+  background-color: $button-hover;
+  }
+
+  a {
+    color: $button-back;
+
+    &:hover {
+      color: $button-color;
+    }
+  }
+
+  img.icon {
+    width: 20px;
+  }
+}
+
+// BUTTON ALTRE SEZIONI
+
+@mixin CTA {
+  background-color: $button-back;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+
+  &:hover {
+  background-color: $button-hover;
+  }
+
+  a {
+    color: $button-color;
+    text-decoration: none;
+  }
+
+  img.icon {
+    width: 20px;
+  }
+}
+
+// CLASSI 
+
+.text {
+  width: 50%;
+}
+
+.img {
+  width: 50%;
+  height: 100%;
+}

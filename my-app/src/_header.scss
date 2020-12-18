@@ -1,0 +1,40 @@
+header {
+  color: $text-color;
+
+  nav {
+    @include container;
+    @include flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+    .menu li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: $text-color;
+
+    }
+
+    .menu button {
+      @include CTA-home;
+
+    }
+  }
+
+  .jumbotron {
+    @include container;
+    @include flex;
+
+
+  .img img {
+    width: 100%;
+  }
+  button {
+    @include CTA;
+    
+  }
+ }
+}
