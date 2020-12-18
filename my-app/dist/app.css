@@ -89,3 +89,35 @@ header .jumbotron button img.icon {
   width: 20px;
 }
 
+main {
+  background-color: #ffe7d2;
+  text-align: center;
+}
+
+main .container-main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .container-main .block {
+  width: 25%;
+  padding: 30px;
+}
+
+main .container-main .block img {
+  height: 150px;
+  width: auto;
+}
+
+main .before {
+  border-bottom: 1px solid black;
+}
+
+main .before img {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+}
+
