@@ -2,39 +2,40 @@ header {
   color: $text-color;
 
   nav {
+    min-height: 80px;
     @include container;
     @include flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid black;
 
+    span {
+      font-size: $font-medium;
+      padding-left: 10px;
+    }
     .menu li {
       display: inline-block;
-      list-style: none;
+      font-size: $font-smaller;
+      font-weight: bold;
+      padding-right: 20px;
     }
 
     .menu a {
-      text-decoration: none;
       color: $text-color;
-
     }
 
     .menu button {
       @include CTA-home;
-
     }
   }
 
   .jumbotron {
     @include container;
     @include flex;
+    padding: 100px 0;
 
-
-  .img img {
-    width: 100%;
-  }
-  button {
-    @include CTA;
-    
-  }
- }
+      button {
+        @include CTA;
+      }
+   }
 }

@@ -5,8 +5,43 @@
   font-family: Arial;
 }
 
+a {
+  text-decoration: none;
+  color: #58402c;
+}
+
+li {
+  list-style: none;
+}
+
 .text {
   width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+
+.text h1 {
+  line-height: 2;
+  margin-right: 30px;
+  font-size: 40px;
+}
+
+.text p p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+
+.text .link {
+  padding: 20px 0;
+}
+
+.text .link a {
+  font-size: 20px;
+}
+
+.text .link a:hover {
+  color: #30488f;
 }
 
 .img {
@@ -16,28 +51,45 @@
 
 .img img {
   width: 100%;
+  margin-left: 20px;
+}
+
+.link-smaller a {
+  font-size: 12px;
+}
+
+.link-smaller a:hover {
+  color: #30488f;
 }
 
 header {
-  color: black;
+  color: #58402c;
 }
 
 header nav {
+  min-height: 80px;
   width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid black;
+}
+
+header nav span {
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 header nav .menu li {
   display: inline-block;
-  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 20px;
 }
 
 header nav .menu a {
-  text-decoration: none;
-  color: black;
+  color: #58402c;
 }
 
 header nav .menu button {
@@ -45,6 +97,7 @@ header nav .menu button {
   border: 1px solid #30488f;
   border-radius: 7px;
   padding: 5px;
+  margin: 10px;
 }
 
 header nav .menu button:hover {
@@ -53,6 +106,7 @@ header nav .menu button:hover {
 
 header nav .menu button a {
   color: #30488f;
+  font-weight: bold;
 }
 
 header nav .menu button a:hover {
@@ -60,24 +114,22 @@ header nav .menu button a:hover {
 }
 
 header nav .menu button img.icon {
-  width: 20px;
+  width: 18px;
 }
 
 header .jumbotron {
   width: 80%;
   margin: 0 auto;
   display: flex;
-}
-
-header .jumbotron .img img {
-  width: 100%;
+  padding: 100px 0;
 }
 
 header .jumbotron button {
   background-color: #30488f;
   border: none;
   border-radius: 7px;
-  padding: 10px;
+  padding: 5px 15px;
+  margin: 30px 10px;
 }
 
 header .jumbotron button:hover {
@@ -86,7 +138,10 @@ header .jumbotron button:hover {
 
 header .jumbotron button a {
   color: white;
-  text-decoration: none;
+}
+
+header .jumbotron button a:hover {
+  color: white;
 }
 
 header .jumbotron button img.icon {
@@ -95,10 +150,25 @@ header .jumbotron button img.icon {
 
 main {
   text-align: center;
+  color: #58402c;
 }
 
 main section.pink {
   background-color: #ffe7d2;
+  padding: 60px 0;
+}
+
+main section.pink .bottom {
+  border-bottom: 1px solid lightgrey;
+}
+
+main section.pink .title {
+  width: 40%;
+  margin: 0 auto;
+}
+
+main section.pink .title h3 {
+  font-size: 25px;
 }
 
 main section.pink .container-main {
@@ -110,7 +180,7 @@ main section.pink .container-main {
 
 main section.pink .container-main .block {
   width: 25%;
-  padding: 30px;
+  padding: 60px 30px;
 }
 
 main section.pink .container-main .block img {
@@ -118,8 +188,16 @@ main section.pink .container-main .block img {
   width: auto;
 }
 
+main section.pink .container-main .block p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 20px 0;
+}
+
 main section.pink .before {
-  border-bottom: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 main section.pink .before img {
@@ -130,10 +208,15 @@ main section.pink .before img {
 
 main .insight {
   display: flex;
+  padding: 40px 0;
 }
 
 main .insight .text {
   text-align: left;
+}
+
+main .insight .text p {
+  padding-top: 10px;
 }
 
 main .insight .text img {
@@ -142,5 +225,87 @@ main .insight .text img {
 
 main .insight .text.align-rg {
   text-align: right;
+}
+
+main .blocknote {
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: justify;
+  border: 1px solid black;
+  line-height: 30px;
+  padding: 60px;
+  margin-top: 40px;
+}
+
+main .blocknote .author {
+  display: flex;
+}
+
+main .blocknote .author span {
+  padding-left: 20px;
+}
+
+main .blocknote .author span h4 {
+  color: #30488f;
+}
+
+main .blocknote .author span p {
+  font-size: 12px;
+}
+
+main .blocknote .author img {
+  width: auto;
+  height: 50px;
+}
+
+main button {
+  background-color: #30488f;
+  border: none;
+  border-radius: 7px;
+  padding: 5px 15px;
+  margin: 30px 10px;
+}
+
+main button:hover {
+  background-color: #233569;
+}
+
+main button a {
+  color: white;
+}
+
+main button a:hover {
+  color: white;
+}
+
+main button img.icon {
+  width: 20px;
+}
+
+footer .container-footer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .container-footer .logo {
+  padding-top: 40px;
+  padding-right: 30px;
+}
+
+footer .container-footer .block {
+  padding-top: 40px;
+  padding-right: 60px;
+}
+
+footer .container-footer .block li {
+  font-size: 12px;
+  line-height: 2.2;
+  padding-top: 10px;
+}
+
+footer .container-footer .block li a:hover {
+  color: #30488f;
 }
 

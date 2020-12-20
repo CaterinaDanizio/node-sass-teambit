@@ -1,9 +1,26 @@
 main {
   text-align: center;
+  color: $text-color;
 
 
   section.pink {
     background-color: $back-main;
+    padding: 60px 0;
+
+    .bottom {
+      border-bottom: 1px solid lightgrey;
+    }
+
+    .title {
+      width: 40%;
+      margin: 0 auto;
+
+      h3 {
+        font-size: $font-bigger;
+      }
+    }
+
+
 
     .container-main {
       @include flex;
@@ -12,17 +29,25 @@ main {
 
       .block {
         width: 25%;
-        padding: 30px;
+        padding: 60px 30px;
 
         img {
           height: 150px;
           width: auto;
         }
+
+        p {
+          font-size: $font-p;
+          line-height: 1.5;
+          padding: 20px 0;
+        }
       }
     }
 
     .before {
-      border-bottom: 1px solid black;
+      @include container;
+      padding-bottom: 40px;
+
       img {
         width: 300px;
         height: auto;
@@ -33,9 +58,16 @@ main {
 
   .insight {
     @include flex;
+    padding: 40px 0;
 
     .text {
       text-align: left;
+
+      p {
+        padding-top: 10px;
+      }
+
+
       img {
         width: 250px;
       }
@@ -44,11 +76,42 @@ main {
     .text.align-rg {
       text-align: right;
     }
-
-
   }
 
+  .blocknote {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: justify;
+    border: 1px solid black;
+    line-height: 30px;
+    padding: 60px;
+    margin-top: 40px;
 
+  .author {
+    @include flex;
 
+    span {
+      padding-left: 20px;
+
+      h4 {
+        color: $button-back;
+      }
+
+      p {
+        font-size: $font-smaller;
+      }
+    }
+
+    img {
+      width: auto;
+      height: 50px;
+    }
+   }
+  }
+
+   button {
+     @include CTA;
+     }
 
 }

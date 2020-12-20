@@ -1,8 +1,16 @@
-$text-color: black;
-$back-main: #ffe7d2;
-$link-color: #30488f;
+// COLORI ORIGINALI
+  // BACKGROUND E COLORE TESTO
+  $text-color: #58402c;
+  $back-main: #ffe7d2;
+  $link-color: #30488f;
 
-// BUTTON CTA
-$button-back: #30488f;
-$button-hover: #233569;
-$button-color: white;
+  // BUTTON CTA
+  $button-back: #30488f;
+  $button-hover: #233569;
+  $button-color: white;
+
+// SIZE
+$font-smaller: 12px;
+$font-medium: 20px;
+$font-bigger: 25px;
+$font-p: 18px;

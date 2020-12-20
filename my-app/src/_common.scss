@@ -14,6 +14,14 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+li {
+  list-style: none;
+}
 
 // BUTTON HOME
 
@@ -22,6 +30,7 @@
   border: 1px solid $button-back;
   border-radius: 7px;
   padding: 5px;
+  margin: 10px;
 
   &:hover {
   background-color: $button-hover;
@@ -29,6 +38,7 @@
 
   a {
     color: $button-back;
+    font-weight: bold;
 
     &:hover {
       color: $button-color;
@@ -36,8 +46,9 @@
   }
 
   img.icon {
-    width: 20px;
+    width: 18px;
   }
+
 }
 
 // BUTTON ALTRE SEZIONI
@@ -46,15 +57,19 @@
   background-color: $button-back;
   border: none;
   border-radius: 7px;
-  padding: 10px;
+  padding: 5px 15px;
+  margin: 30px 10px;
 
   &:hover {
   background-color: $button-hover;
   }
 
   a {
-    color: $button-color;
-    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: white;
+    }
   }
 
   img.icon {
@@ -62,10 +77,41 @@
   }
 }
 
-// CLASSI
+// PARAGRAFI
+@mixin paragraph {
+  p {
+    font-size: $font-medium;
+    line-height: 1.5;
+    padding: 20px 0;
+  }
+}
+
+// CLASSI COMUNI
 
 .text {
   width: 50%;
+  height: 100%;
+  padding: 20px;
+
+  h1 {
+    line-height: 2;
+    margin-right: 30px;
+    font-size: 40px;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  .link {
+    padding: 20px 0;
+    a {
+      font-size: $font-medium;
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
 }
 
 .img {
@@ -74,5 +120,15 @@
 
   img {
     width: 100%;
+    margin-left: 20px;
   }
+}
+
+.link-smaller a {
+  font-size: $font-smaller;
+
+  &:hover {
+    color: $link-color;
+  }
+
 }
