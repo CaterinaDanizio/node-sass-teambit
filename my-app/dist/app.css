@@ -3,11 +3,12 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial;
+  color: #040F0F;
 }
 
 a {
   text-decoration: none;
-  color: #58402c;
+  color: #040F0F;
 }
 
 li {
@@ -41,7 +42,7 @@ li {
 }
 
 .text .link a:hover {
-  color: #30488f;
+  color: #4466D4;
 }
 
 .img {
@@ -59,11 +60,11 @@ li {
 }
 
 .link-smaller a:hover {
-  color: #30488f;
+  color: #4466D4;
 }
 
 header {
-  color: #58402c;
+  color: #040F0F;
 }
 
 header nav {
@@ -74,6 +75,17 @@ header nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+}
+
+header nav .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header nav .logo img {
+  height: 50px;
+  width: auto;
 }
 
 header nav span {
@@ -89,23 +101,23 @@ header nav .menu li {
 }
 
 header nav .menu a {
-  color: #58402c;
+  color: #040F0F;
 }
 
 header nav .menu button {
   background-color: white;
-  border: 1px solid #30488f;
+  border: 1px solid #4466D4;
   border-radius: 7px;
   padding: 5px;
   margin: 10px;
 }
 
 header nav .menu button:hover {
-  background-color: #233569;
+  background-color: #0E14EE;
 }
 
 header nav .menu button a {
-  color: #30488f;
+  color: #4466D4;
   font-weight: bold;
 }
 
@@ -125,7 +137,7 @@ header .jumbotron {
 }
 
 header .jumbotron button {
-  background-color: #30488f;
+  background-color: #4466D4;
   border: none;
   border-radius: 7px;
   padding: 5px 15px;
@@ -133,7 +145,7 @@ header .jumbotron button {
 }
 
 header .jumbotron button:hover {
-  background-color: #233569;
+  background-color: #0E14EE;
 }
 
 header .jumbotron button a {
@@ -150,11 +162,11 @@ header .jumbotron button img.icon {
 
 main {
   text-align: center;
-  color: #58402c;
+  color: #040F0F;
 }
 
 main section.pink {
-  background-color: #ffe7d2;
+  background-color: #7F14D4;
   padding: 60px 0;
 }
 
@@ -247,7 +259,7 @@ main .blocknote .author span {
 }
 
 main .blocknote .author span h4 {
-  color: #30488f;
+  color: #4466D4;
 }
 
 main .blocknote .author span p {
@@ -260,7 +272,7 @@ main .blocknote .author img {
 }
 
 main button {
-  background-color: #30488f;
+  background-color: #4466D4;
   border: none;
   border-radius: 7px;
   padding: 5px 15px;
@@ -268,7 +280,7 @@ main button {
 }
 
 main button:hover {
-  background-color: #233569;
+  background-color: #0E14EE;
 }
 
 main button a {
@@ -306,6 +318,6 @@ footer .container-footer .block li {
 }
 
 footer .container-footer .block li a:hover {
-  color: #30488f;
+  color: #4466D4;
 }
 

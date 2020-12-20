@@ -9,6 +9,19 @@ header {
     align-items: center;
     border-bottom: 1px solid black;
 
+    .logo {
+      height: 100%;
+      @include flex;
+      align-items: center;
+    }
+
+    .logo img {
+
+     height: 50px;
+     width: auto;
+
+    }
+
     span {
       font-size: $font-medium;
       padding-left: 10px;
